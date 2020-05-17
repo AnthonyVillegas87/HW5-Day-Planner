@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      
+      <p id="currentDay" class="date"></p>
+    </header>
+    <div class="container">
+      <table class="table" style="width:100%">
+        <tbody>
+         <tr>
+           <td class="row" id="time8">8:00 AM</td>
+           <td class="description" id="inputBlock1"><textarea class="userInput" id="input1"  placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="1"><i class="far fa-save"></i></td> 
+         </tr>
+         <tr>
+           <td class="row" id="time9">9:00 AM</td>
+           <td class="description" id="inputBlock2"><textarea class="userInput" id="input2"  placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="2"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time10">10:00 AM</td>
+           <td class="description" id="inputBlock3"><textarea class="userInput" id="input3"  placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="3"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time11">11:00 AM</td>
+           <td class="description" id="inputBlock4"><textarea class="userInput" id="input4"  placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="4"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time12">12:00 PM</td>
+           <td class="description" id="inputBlock5"><textarea class="userInput" id="input5" placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="5"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time13">1:00 PM</td>
+           <td class="description" id="inputBlock6"><textarea class="userInput" id="input6" placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="6"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time14">2:00 PM</td>
+           <td class="description" id="inputBlock7"><textarea class="userInput" id="input7" placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="7"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time15">3:00 PM</td>
+           <td class="description" id="inputBlock8"><textarea class="userInput" id="input8" placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="8"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time16">4:00 PM</td>
+           <td class="description" id="inputBlock9"><textarea class="userInput" id="input9" placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="9"><i class="far fa-save"></i></td>
+         </tr>
+         <tr>
+           <td class="row" id="time17">5:00 PM</td>
+           <td class="description" id="inputBlock10"><textarea class="userInput" id="input10" placeholder="Add Event"></textarea></td>
+           <td class="saveBtn" id="10"><i class="far fa-save"></i></td>
+         </tr>
+       </tbody>
+        
+
+      </table>
+    </div>
+   
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="index.js"></script>
+   
+  </body>
+</html>
