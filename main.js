@@ -4,10 +4,6 @@ var holdHour = -1;
 var myStorage = window.localStorage
 
 
-myStorage.setItem('frank','tutor')
-
-
-
 const clock = document.getElementById("currentDay");
 setInterval(() => {
     const now = moment();
@@ -56,10 +52,6 @@ renderAddEvent();
 
 
 
-//TUTOR STUFF
-//Reading error stacks
-
-//
 
 
 
