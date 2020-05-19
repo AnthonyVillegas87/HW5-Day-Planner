@@ -1,6 +1,13 @@
 var timeSlots = $(".row");
 var holdHour = -1;
 
+var myStorage = window.localStorage
+
+
+myStorage.setItem('frank','tutor')
+
+
+
 const clock = document.getElementById("currentDay");
 setInterval(() => {
     const now = moment();
@@ -34,7 +41,7 @@ $(".saveBtn").on("click",function(){
     var id = button.attr("id");
     var input = $("#input" + id);
     var inputVal = input.val();
-    localStorage.setItem("input" + id,inputVal);
+    myStorage.setItem("input" + id,inputVal);
 });
 
 
@@ -42,14 +49,17 @@ $(".saveBtn").on("click",function(){
 function renderAddEvent() {
     
     for(var i = 1; i <= 10; i++){
-        $("#input" + i).val(localStorage.getItem("input" + i));
+        $("#input" + i).val(myStorage.getItem("input" + i));
     }
 }
 renderAddEvent();
 
 
 
+//TUTOR STUFF
+//Reading error stacks
 
+//
 
 
 
